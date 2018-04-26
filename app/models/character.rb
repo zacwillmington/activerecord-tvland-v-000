@@ -6,7 +6,7 @@ class Character < ActiveRecord::Base
       arr =[]
       arr << "#{self.name} always says: #{self.catchphrase}"
       arr.join("]")
-      binding.pry
+      #binding.pry
 
   end
 end
