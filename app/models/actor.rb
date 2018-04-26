@@ -10,5 +10,5 @@ class Actor < ActiveRecord::Base
       id = self.characters.first.show_id
       "#{self.characters.name} - #{Show.find(id).name}"
   end
-  binding.pry
+
 end
