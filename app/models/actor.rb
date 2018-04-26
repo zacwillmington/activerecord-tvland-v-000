@@ -7,8 +7,7 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-      binding.pry
       id = self.characters.show_id
-      "#{self.characters.name} - #{Showw.find(id)}"
+      "#{self.characters.name} - #{Show.find(id)}"
   end
 end
