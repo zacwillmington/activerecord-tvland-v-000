@@ -10,7 +10,7 @@ class Actor < ActiveRecord::Base
       arr =[]
       id = self.characters.first.show_id
       binding.pry
-      arr << "#{self.characters.name} - #{Show.find(id).name}"
+      arr << "#{self.characters.first.name} - #{Show.find(id).name}"
       arr
       binding.pry
   end
