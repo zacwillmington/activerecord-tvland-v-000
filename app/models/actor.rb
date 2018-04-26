@@ -1,5 +1,5 @@
 class Actor < ActiveRecord::Base
-  belongs_to :shows
+  belongs_to :show
   has_many :characters
 
   def full_name
