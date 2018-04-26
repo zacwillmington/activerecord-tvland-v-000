@@ -12,6 +12,7 @@ class Actor < ActiveRecord::Base
       binding.pry
       arr << "#{self.characters.name} - #{Show.find(id).name}"
       arr
+      binding.pry
   end
 
 end
