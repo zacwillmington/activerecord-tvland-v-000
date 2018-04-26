@@ -5,7 +5,7 @@ class Character < ActiveRecord::Base
   def say_that_thing_you_say
       arr =[]
       arr << "#{self.name} always says: #{self.catchphrase}"
-      arr
+      arr.flatten
       #binding.pry
 
   end
