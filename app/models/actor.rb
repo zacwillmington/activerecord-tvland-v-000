@@ -13,12 +13,7 @@ class Actor < ActiveRecord::Base
     #   show_name = Show.find_by(id).name
     #   "#{self.characters.name} - #{show_name}"
     #   binding.pry
-    role = []
-      self.characters.all.each do |char|
-          binding.pry
-          role << "#{char.name} - #{Show.find_by(char.show_id)}"
-      end
-      role
+
       binding.pry
   end
 end
