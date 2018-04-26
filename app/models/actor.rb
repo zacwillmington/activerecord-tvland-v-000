@@ -7,12 +7,6 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-    #   binding.pry
-    #   id = self.show_id
-    #   binding.pry
-    #   show_name = Show.find_by(id).name
-    #   "#{self.characters.name} - #{show_name}"
-    #   binding.pry
-
+      
   end
 end
