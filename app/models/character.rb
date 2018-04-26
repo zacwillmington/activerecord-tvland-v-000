@@ -4,6 +4,10 @@ class Character < ActiveRecord::Base
 
   def say_that_thing_you_say
       binding.pry
-      puts "#{self.name} always says: #{self.catchphrase}"
+      arr =[]
+      arr << puts "#{self.name} always says: #{self.catchphrase}"
+      arr
+      binding.pry
+
   end
 end
