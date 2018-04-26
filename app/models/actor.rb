@@ -14,6 +14,5 @@ class Actor < ActiveRecord::Base
     #   "#{self.characters.name} - #{show_name}"
     #   binding.pry
 
-      binding.pry
   end
 end
