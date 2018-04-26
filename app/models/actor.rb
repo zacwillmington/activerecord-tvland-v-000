@@ -9,5 +9,6 @@ class Actor < ActiveRecord::Base
   def list_roles
       id = self.characters.show_id
       "#{self.characters.name} - #{Show.find(id)}"
+      binding.pry
   end
 end
